@@ -16,29 +16,72 @@ fontthemeoptions:
 - onlymath
 ---
 
-# The Multi-armed Bandit Problem
+# The Problem
 
-## The Multi-armed Bandit Problem -- Problem Statement
+## Medical Experiment Design
 
-----------------------    ----------------------------
-**You have:**             **You want:**
-A bag of quarters         Maximal Money
-A row of slot machines    **You don't know:**
-                          Which slot machine is best
-----------------------    ----------------------------
+  - You have two potential treatments: $A$ and $B$.
+  - You are not certain which treatment is _better_.
+  - How do you decide which patients get which treatment?
 
-How do you balance **exploration** and **exploitation** in a way that **maximizes return** on your quarters spent?
+![Pills and placebos](./img/pills.jpg)
 
+## Balancing Competing Goals
+
+**Belief:** Treatment $B$ is better than Treatment $A$
+
+**Confidence:** 75%
+
+**Competing Goals:**
+
+  1. _Exploration:_ Discover which treatment really is better.
+  2. _Exploitation:_ Cure the most patients.
+
+## Some Solutions (and their problems)
+
+  1. All patients get Treatment $B$.
+    - Never gain new insight.
+    - 25% chance we're wrong.
+  2. Half get Treatment $A$, half get Treatment $B$.
+    - Ethical?
+    - Stopping conditions?
+
+# On the likelihood that one unknown probability exceeds another in view of the evidence of two samples
+
+## Page 1
+
+![Page 1](./img/page1.jpg)
+
+## Purpose
+
+This paper is ...
+
+> not centred upon the interpretation of particular data, but ... a general interest in problems of research planning ... there can be no objection to the use of data, however meagre, as a guide to action required before more can be collected.
+
+Use all the data!
+
+> Serious objection can otherwise be raised to argument based upon a small number of observations.
+> Indeed, the fact that such objection can never be eliminated entirely---no matter how great the number of observations---suggested the possible value of seeking other modes of operation than that of taking a large number of observations before analysis or any attempt to direct our course.
+
+We will never be 100% certain.
+
+## Structure
+
+  - _Section 1:_
+    - Treatments should be selected in proportion to our beliefs in their effectiveness.
+    - We should continually update our beliefs rigorously using Bayes' Theorem.
+  - _Section 2:_
+    -
 
 # Applications to Machine Learning
 
 ## Applications -- Thompson Sampling Algorithm
 
-**Consideration:**
+**Considerations:**
 
-  * *Decision theory:* We want to select the best arm from limited knowledge (i.e. solve Multi-armed Bandit Problem).
+  - *Decision theory:* We want to select the best arm from limited knowledge (i.e. solve Multi-armed Bandit Problem).
 
-  * *Reinforcement Learning:* Select arms algorithmically, remember the outcomes, and use the knowledge gained to inform our future selections.
+  - *Reinforcement Learning:* Select arms algorithmically, remember the outcomes, and use the knowledge gained to inform future selections.
 
 Thompson Sampling provides a framework for doing both simultaneously.
 
@@ -51,25 +94,25 @@ Thompson Sampling provides a framework for doing both simultaneously.
 
 ## Applications -- Starting Assumptions
 
-  * A set of arms.
+  - A set of arms.
 
     *The penny slots at Chumash Casino.*
 
-  * An observable feedback mechanism.
+  - An observable feedback mechanism.
 
     *Slots give instant feedback:*
 
       * *Win or lose?*
       * *If win, how much?*
 
-  * A model for the "goodness" of your arms.
+  - A model for the "goodness" of your arms.
 
     *For each slot machine:*
 
-      * $\mathrm{Bernoulli}(p)$ with unknown $p$
-      * $\mathrm{Exponential}(\lambda)$ with unknown $\lambda$
-      * $p \sim \mathrm{Beta}(1, 1)$ initial prior on $p$
-      * $\lambda \sim \mathrm{Gamma}(1, 1)$ initial prior on $\lambda$
+      - $\mathrm{Bernoulli}(p)$ with unknown $p$
+      - $\mathrm{Exponential}(\lambda)$ with unknown $\lambda$
+      - $p \sim \mathrm{Beta}(1, 1)$ initial prior on $p$
+      - $\lambda \sim \mathrm{Gamma}(1, 1)$ initial prior on $\lambda$
 
 ## Applications -- Architecture (Stats Model)
 
@@ -148,10 +191,10 @@ $$
 
 ## References
 
-  * [W. R. Thompson. "On the likelihood that one unknown probability exceeds another in view of the evidence of two samples." _Biometrika_, 1933.](https://www.dropbox.com/s/yhn9prnr5bz0156/1933-thompson.pdf)
+  - [W. R. Thompson. "On the likelihood that one unknown probability exceeds another in view of the evidence of two samples." _Biometrika_, 1933.](https://www.dropbox.com/s/yhn9prnr5bz0156/1933-thompson.pdf)
 
-  * [O. Chapelle, L Li. "An empirical evaluation of Thompson sampling." _Advances in Neural Information Processing Systems_, 2011.](http://dl.acm.org/citation.cfm?id=2986710)
+  - [O. Chapelle, L Li. "An empirical evaluation of Thompson sampling." _Advances in Neural Information Processing Systems_, 2011.](http://dl.acm.org/citation.cfm?id=2986710)
 
-  * [D. Fink. "A compendium of conjugate priors." Unpublished manuscript, 1997.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.157.5540&rep=rep1&type=pdf)
+  - [D. Fink. "A compendium of conjugate priors." Unpublished manuscript, 1997.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.157.5540&rep=rep1&type=pdf)
 
-  * ["Bayes' Theorem," "Bayesian inference," "Conjugate prior." _Wikipedia_.](https://en.wikipedia.org/wiki/)
+  - ["Bayes' Theorem," "Bayesian inference," "Conjugate prior." _Wikipedia_.](https://en.wikipedia.org/wiki/)
