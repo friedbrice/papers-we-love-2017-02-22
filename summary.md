@@ -118,7 +118,7 @@ Courtesy to the reader aside, we have in this paragraph the answer to the centra
 
 $$
 P(\tilde{p}_2 > \tilde{p}_1) = \frac{
-  \sum_{\alpha = 0}^{s_1} {s_1 + s_2 - \alpha \choose s_2} {r_1 + r_2 + 1 + \alpha \choose r_2}
+  \sum_{\alpha = 0}^{r_2} {r_1 + r_2 - \alpha \choose r_1} {s_1 + s_2 + 1 + \alpha \choose s_1}
 }{
   {n_1 + n_2 + 2 \choose n_1 + 1}
 }
@@ -147,13 +147,13 @@ Thompson points out his use of Stirling's factorial approximation formula to fac
 
 ### Sixth Paragraph
 
-$\psi(r_1, s_1, r_2, s_2)$ is simply defined to be the expression in _Equation 5_, which in the context of our problem is the value we are interested in computing for small values of $r_1, s_1, r_2, s_2$:
+$\psi(r, s, r', s')$ is simply defined to be the expression in _Equation 5_, which in the context of our problem is the value we are interested in computing for small values of $r, s, r', s'$:
 
 $$
-\psi(r_1, s_1, r_2, s_2) = \frac{
-  \sum_{\alpha = 0}^{s_1} {s_1 + s_2 - \alpha \choose s_2} {r_1 + r_2 + 1 + \alpha \choose r_2}
+\psi(r, s, r', s') = \frac{
+  \sum_{\alpha = 0}^{r'} {r + r' - \alpha \choose r} {s + s' + 1 + \alpha \choose s}
 }{
-  {n_1 + n_2 + 2 \choose n_1 + 1}
+  {n + n' + 2 \choose n + 1}
 }
 $$
 

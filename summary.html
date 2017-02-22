@@ -69,7 +69,7 @@ R_i^n \sim \textrm{Binomial}(n, \tilde{p}_i)
 <p>Courtesy to the reader aside, we have in this paragraph the answer to the central problem of the paper:</p>
 <p><span class="math display">\[
 P(\tilde{p}_2 &gt; \tilde{p}_1) = \frac{
-  \sum_{\alpha = 0}^{s_1} {s_1 + s_2 - \alpha \choose s_2} {r_1 + r_2 + 1 + \alpha \choose r_2}
+  \sum_{\alpha = 0}^{r_2} {r_1 + r_2 - \alpha \choose r_1} {s_1 + s_2 + 1 + \alpha \choose s_1}
 }{
   {n_1 + n_2 + 2 \choose n_1 + 1}
 }
@@ -88,12 +88,12 @@ P(\tilde{p}_2 &gt; \tilde{p}_1) = \frac{
 <h3 id="fifth-paragraph">Fifth Paragraph</h3>
 <p>Thompson points out his use of Stirling's factorial approximation formula to facilitate computations.</p>
 <h3 id="sixth-paragraph">Sixth Paragraph</h3>
-<p><span class="math inline">\(\psi(r_1, s_1, r_2, s_2)\)</span> is simply defined to be the expression in <em>Equation 5</em>, which in the context of our problem is the value we are interested in computing for small values of <span class="math inline">\(r_1, s_1, r_2, s_2\)</span>:</p>
+<p><span class="math inline">\(\psi(r, s, r&#39;, s&#39;)\)</span> is simply defined to be the expression in <em>Equation 5</em>, which in the context of our problem is the value we are interested in computing for small values of <span class="math inline">\(r, s, r&#39;, s&#39;\)</span>:</p>
 <p><span class="math display">\[
-\psi(r_1, s_1, r_2, s_2) = \frac{
-  \sum_{\alpha = 0}^{s_1} {s_1 + s_2 - \alpha \choose s_2} {r_1 + r_2 + 1 + \alpha \choose r_2}
+\psi(r, s, r&#39;, s&#39;) = \frac{
+  \sum_{\alpha = 0}^{r&#39;} {r + r&#39; - \alpha \choose r} {s + s&#39; + 1 + \alpha \choose s}
 }{
-  {n_1 + n_2 + 2 \choose n_1 + 1}
+  {n + n&#39; + 2 \choose n + 1}
 }
 \]</span></p>
 <p>I am confused about what Thompson is claiming with the limit in Equation 11.</p>
