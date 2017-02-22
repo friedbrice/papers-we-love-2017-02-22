@@ -1,8 +1,9 @@
 # Haskell Build Files
 *.hi
 *.o
+
 # Haskell Artifact
-Sampler
+#Sampler
 
 # Latex/Beamer Build Files
 *.log
@@ -12,6 +13,7 @@ Sampler
 *.toc
 *.vrb
 *.aux
+
 # Latex/Beamer Artifact
 presentation.tex
-presentation.pdf
+#presentation.pdf
