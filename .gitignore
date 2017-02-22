@@ -1,0 +1,17 @@
+# Haskell Build Files
+*.hi
+*.o
+# Haskell Artifact
+Sampler
+
+# Latex/Beamer Build Files
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.vrb
+*.aux
+# Latex/Beamer Artifact
+presentation.tex
+presentation.pdf
