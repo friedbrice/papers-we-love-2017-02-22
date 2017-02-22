@@ -100,6 +100,8 @@ Use all the data! (Even if there's not a lot.)
 
   - Section 3:
       - Connections to related work.
+          - Estimating Thompson's $\psi$ function.
+          - Equivalent to estimating Pearson's $B$ and $I$ functions.
       - Call to statisticians to continue this work.
           - Table complete for small values of $r, s, r', s'$.
           - Complete table for larger values.
