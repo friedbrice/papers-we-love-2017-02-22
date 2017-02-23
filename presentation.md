@@ -329,3 +329,5 @@ $$
   - [D. Fink. "A compendium of conjugate priors." Unpublished manuscript, 1997.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.157.5540&rep=rep1&type=pdf)
 
   - ["Bayes' Theorem," "Bayesian inference," "Conjugate prior." _Wikipedia_.](https://en.wikipedia.org/wiki/)
+
+Checkout the project repo on github: [github.com/friedbrice/papers-we-love-2017-02-22](https://github.com/friedbrice/papers-we-love-2017-02-22).
