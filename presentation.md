@@ -189,7 +189,7 @@ If there exists a parameter $\alpha'$ such that $g = h_{\alpha'}$, then the fami
 
 ## Applications -- Conjugate Priors
 
-**Conjugate Priors:**
+**Conjugate Priors:** [3]
 
   - Already worked out for many classical distributions.
   - Parameters are simple to calculate/track.
@@ -215,7 +215,7 @@ $\dots$                           $\dots$                                    $\d
 
 Thompson Sampling provides a framework for doing both simultaneously.
 
-**Algorithm:**
+**Algorithm:** [2]
 
   1. Sample our current model for each option.
   2. Choose the option that gets the highest sample.
@@ -236,7 +236,7 @@ Thompson Sampling provides a framework for doing both simultaneously.
       - _Win or lose?_
       - _If win, how much?_
 
-  - A model for the "goodness" of each arms.
+  - A model for the "goodness" of each arms [1].
 
     _For each slot machine:_
 
@@ -322,12 +322,14 @@ $$
 
 ## References
 
-  - [W. R. Thompson. "On the likelihood that one unknown probability exceeds another in view of the evidence of two samples." _Biometrika_, 1933.](https://www.dropbox.com/s/yhn9prnr5bz0156/1933-thompson.pdf)
+  1. A. Byaly. _Verbal communication._ 2016.
 
-  - [O. Chapelle, L Li. "An empirical evaluation of Thompson sampling." _Advances in Neural Information Processing Systems_, 2011.](http://dl.acm.org/citation.cfm?id=2986710)
+  2. [O. Chapelle, L Li. "An empirical evaluation of Thompson sampling." _Advances in Neural Information Processing Systems_, 2011.](http://dl.acm.org/citation.cfm?id=2986710)
 
-  - [D. Fink. "A compendium of conjugate priors." Unpublished manuscript, 1997.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.157.5540&rep=rep1&type=pdf)
+  3. [D. Fink. "A compendium of conjugate priors." Unpublished manuscript, 1997.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.157.5540&rep=rep1&type=pdf)
 
-  - ["Bayes' Theorem," "Bayesian inference," "Conjugate prior." _Wikipedia_.](https://en.wikipedia.org/wiki/)
+  4. [W. R. Thompson. "On the likelihood that one unknown probability exceeds another in view of the evidence of two samples." _Biometrika_, 1933.](https://www.dropbox.com/s/yhn9prnr5bz0156/1933-thompson.pdf)
+
+  5. ["Bayes' Theorem," "Bayesian inference," "Conjugate prior." _Wikipedia_.](https://en.wikipedia.org/wiki/)
 
 Checkout the presentation repo on github: [github.com/friedbrice/papers-we-love-2017-02-22](https://github.com/friedbrice/papers-we-love-2017-02-22).
