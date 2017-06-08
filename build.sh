@@ -1,6 +1,13 @@
 #!/bin/bash
 
-/usr/local/bin/pandoc --from=markdown --to=beamer --standalone \
-  < presentation.md > presentation.tex
+mkdir -p texbuild
+mkdir -p target
+cp -r img texbuild/img
 
-/Library/TeX/texbin/pdflatex presentation.tex
+pandoc --from=markdown --to=beamer --standalone \
+  < presentation.md > texbuild/presentation.tex
+
+cd texbuild
+pdflatex -interaction=batchmode -halt-on-error presentation.tex
+cd ..
+mv texbuild/presentation.pdf presentation.pdf
