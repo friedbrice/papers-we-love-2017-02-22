@@ -1,4 +1,4 @@
-texbuild/*
 *.hi
 *.o
 *.pdf
+*.html
