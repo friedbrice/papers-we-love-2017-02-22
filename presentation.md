@@ -6,12 +6,14 @@ date: 22 February 2017
 institute: CJ Affiliate, Santa Barbara, California
 header-includes:
 - \usepackage[all]{xy}
-- \usefonttheme[onlymath]{serif}
 theme: default
 colortheme: beaver
 classoption:
 - aspectratio=1610
 - 12pt
+fonttheme: serif
+fontthemeoptions:
+- onlymath
 ---
 
 # The Problem
@@ -320,7 +322,7 @@ $$
 
 ## References
 
-  1. A. Byaly. _Verbal communication._ 2016.
+  1. A. Byaly. Verbal communication. 2016.
 
   2. [O. Chapelle, L Li. "An empirical evaluation of Thompson sampling." _Advances in Neural Information Processing Systems_, 2011.](http://dl.acm.org/citation.cfm?id=2986710)
 
