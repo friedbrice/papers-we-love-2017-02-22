@@ -6,14 +6,12 @@ date: 22 February 2017
 institute: CJ Affiliate, Santa Barbara, California
 header-includes:
 - \usepackage[all]{xy}
+- \usefonttheme[onlymath]{serif}
 theme: default
 colortheme: beaver
 classoption:
 - aspectratio=1610
 - 12pt
-fonttheme: serif
-fontthemeoptions:
-- onlymath
 ---
 
 # The Problem
